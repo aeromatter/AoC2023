@@ -10,7 +10,6 @@ words = {
     'seven': '7',
     'eight': '8',
     'nine': '9',
-    'zero': '0'
 }
 
 def part1():
