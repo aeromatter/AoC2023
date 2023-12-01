@@ -9,7 +9,7 @@ words = {
     'six': '6',
     'seven': '7',
     'eight': '8',
-    'nine': '9',
+    'nine': '9'
 }
 
 def part1():
@@ -19,7 +19,7 @@ def part1():
 		for line in f:
 			digits = re.findall("\d+", line)
 			nums = "".join(digits)
-			new_num = str(nums[0] + nums[-1])
+			new_num = nums[0] + nums[-1]
 			sum_total += int(new_num)
 	print(sum_total)
 
@@ -34,7 +34,7 @@ def part2():
 				left[0] = "".join([words[word] for word in left])
 			if not right[0].isdigit():
 				right[0] = "".join([words[word] for word in right])
-			new_num = str(left[0] + right[0])
+			new_num = left[0] + right[0]
 			sum_total += int(new_num)
 	print(sum_total)
 
